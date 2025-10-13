@@ -13,23 +13,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- To switch hero to the combo image, rename assets/hero-combo.jpg to hero-exterior.jpg or update the CSS .hero background path -->
-  <header class="header" role="banner">
+  <header class="header">
     <div class="header-inner container">
       <div class="brand">
         <img src="assets/logo-right.png" alt="Tehaleh Fitness & Wellness Club logo">
         <div class="name">Tehaleh Fitness & Wellness Club</div>
       </div>
-      <nav class="nav" aria-label="Primary">
-        <a href="#join">Join Now</a>
+      <nav class="nav">
+        <a href="#join">Join</a>
         <a href="#amenities">Amenities</a>
-        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
         <a class="cta" href="#join">Founders Presale</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero" role="img" aria-label="Exterior render of Tehaleh Fitness & Wellness Club with Mount Rainier backdrop">
+  <section class="hero" aria-label="Exterior render of Tehaleh Fitness & Wellness Club with Mount Rainier backdrop">
     <div class="inner container">
       <div class="copy">
         <span class="badge">Founders Presale • Limited to 500 Members</span>
@@ -74,46 +73,31 @@
           <div class="small">Stripe is in TEST MODE right now. Replace with your live link when ready.</div>
         </div>
       </div>
-
-      <hr style="margin:28px 0;border:0;border-top:1px solid var(--border)">
-
-      <h3>Prefer to hold a spot without payment?</h3>
-      <p class="small">We’ll hold your Founders spot for 7 days and email you the next steps.</p>
-
-      <form action="https://formsubmit.co/Casey-morris@live.com" method="POST" class="grid grid-2" style="gap:14px">
-        <input type="hidden" name="_subject" value="Founding Member Hold – Tehaleh Fitness">
-        <input type="hidden" name="_next" value="https://tehalehfitness.com/thank-you.html">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text"   name="Full Name" placeholder="Full Name" required style="padding:14px;border-radius:12px;border:1px solid var(--border)">
-        <input type="email"  name="Email" placeholder="Email Address" required style="padding:14px;border-radius:12px;border:1px solid var(--border)">
-        <input type="tel"    name="Mobile" placeholder="Mobile" value="443-742-7054" style="padding:14px;border-radius:12px;border:1px solid var(--border)">
-        <select name="Plan" required style="padding:14px;border-radius:12px;border:1px solid var(--border)">
-          <option value="">Select Plan</option>
-          <option>Individual – $99/mo</option>
-          <option>Family – $149/mo</option>
-        </select>
-        <button class="btn btn-primary" type="submit" style="grid-column:1/-1;justify-self:start">Hold My Founders Spot</button>
-      </form>
     </div>
   </section>
 
-  <section id="faq" class="section">
-    <div class="container grid grid-2">
-      <div>
-        <h2 class="title">FAQ</h2>
-        <dl class="faq">
-          <dt>When do monthly payments start?</dt>
-          <dd>Only when the club opens. Presale purchases are fully refundable if we do not open.</dd>
-          <dt>Can I upgrade from Individual to Family later?</dt>
-          <dd>Yes, your Founders benefits carry over.</dd>
-          <dt>Where will the club be located?</dt>
-          <dd>We’re finalizing our location in the Tehaleh commercial district. Founders receive monthly construction updates.</dd>
-        </dl>
-      </div>
-      <div class="card">
-        <strong>Questions?</strong><br>
-        Email: <a href="mailto:Casey-morris@live.com">Casey-morris@live.com</a><br>
-        Call/Text: <a href="tel:443-742-7054">443-742-7054</a><br>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="title">Contact Us</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <form action="https://formsubmit.co/Casey-morris@live.com" method="POST" class="form">
+            <input type="hidden" name="_subject" value="Tehaleh Fitness – Website Contact Form">
+            <input type="hidden" name="_next" value="https://tehalehfitness.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input class="input" type="text"   name="Full Name" placeholder="Full Name" required>
+            <input class="input" type="email"  name="Email" placeholder="Email Address" required>
+            <input class="input" type="tel"    name="Phone" placeholder="Phone (optional)">
+            <textarea class="textarea" name="Message" placeholder="How can we help?" required></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <div class="notice">We usually reply within one business day.</div>
+          </form>
+        </div>
+        <div class="card">
+          <strong>Tehaleh Fitness & Wellness Club</strong><br>
+          Tehaleh, WA — Commercial Village (coming soon)<br><br>
+          <div class="small">Media & partners: Request our project brief and construction timeline via the form.</div>
+        </div>
       </div>
     </div>
   </section>
