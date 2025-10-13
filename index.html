@@ -4,49 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Tahaleh Fitness & Wellness Club – Founders Presale</title>
-  <meta name="description" content="Black Friday Founders Presale for Tahaleh Fitness & Wellness Club. Lock lifetime rates, waive enrollment, and secure your spot in Tehaleh's premium community club."/>
+  <meta name="description" content="Founders Presale for Tahaleh Fitness & Wellness Club. Lock lifetime rates, waive enrollment, and secure your spot in Tehaleh's premium community club."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script>
-    // Simple countdown to next Monday after Thanksgiving or a fixed date
-    const endDate = new Date(new Date().getFullYear(), 10, 29, 23, 59, 59); // Nov 29 11:59pm (adjust if needed)
-    function tick(){
-      const now = new Date();
-      const diff = endDate - now;
-      const el = document.getElementById('countdown');
-      if(diff<=0){ el.textContent = '00:00:00'; return; }
-      const s = Math.floor(diff/1000)%60;
-      const m = Math.floor(diff/60000)%60;
-      const h = Math.floor(diff/3600000)%24;
-      const d = Math.floor(diff/86400000);
-      el.textContent = (d>0? d+'d ':'') + String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
-      requestAnimationFrame(tick);
-    }
-    window.addEventListener('DOMContentLoaded', tick);
-  </script>
 </head>
 <body>
-  <div class="bfbar">
-    <span class="deal">Black Friday Founders Sale:</span>
-    Individual $89 • Family $139 • $0 enrollment • First 100 get 6-month Recovery Upgrade.
-    Ends in <span id="countdown">--:--:--</span>
+  <div style="background:#8b1f1f;color:#fff;text-align:center;padding:8px;font-weight:700;">
+    TEST MODE: Stripe checkout is using a sandbox link for demo only.
   </div>
 
   <header class="hero">
     <div class="inner">
-      <div class="brand">
-        <h1>Tahaleh Fitness & Wellness Club</h1>
-        <div class="tagline">Elevate Your Lifestyle</div>
-        <div class="contact">
-          <span>Call/Text: <a href="tel:443-742-7054">443-742-7054</a></span> •
-          <span>Email: <a href="mailto:Casey-morris@live.com">Casey-morris@live.com</a></span>
-        </div>
-      </div>
+      <div class="badge">Founding Members Presale</div>
+      <h1>Tahaleh Fitness & Wellness Club</h1>
+      <div class="tagline">Elevate Your Lifestyle</div>
+      <p style="color:#e9eef2;margin-top:8px">Call/Text: <a style="color:#fff;text-decoration:underline" href="tel:443-742-7054">443-742-7054</a> • Email: <a style="color:#fff;text-decoration:underline" href="mailto:Casey-morris@live.com">Casey-morris@live.com</a></p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#join">Join as a Founding Member</a>
-        <a class="btn btn-ghost" href="#details">See Founders’ Offer</a>
+        <a class="btn btn-ghost" href="#details">See Offer</a>
       </div>
     </div>
   </header>
@@ -57,17 +34,14 @@
         <div class="card">
           <h2>Founding Member Offer</h2>
           <ul class="checklist">
-            <li><strong>Individual:</strong> <s>$99</s> <strong>$89/month</strong> (Founders’ rate — locked for life)</li>
-            <li><strong>Family (up to 4):</strong> <s>$149</s> <strong>$139/month</strong> (Founders’ rate — locked for life)</li>
+            <li><strong>Individual:</strong> $99/month (Founders’ rate — locked for life)</li>
+            <li><strong>Family (up to 4):</strong> $149/month (Founders’ rate — locked for life)</li>
             <li>Enrollment fee <strong>waived</strong> ($100 value)</li>
             <li>Free Founding Member tee + bottle at opening</li>
             <li>Priority access + 2 guest passes/month for first year</li>
-            <li><strong>First 100</strong> get 6-month Recovery Upgrade (infrared sauna + cold plunge)</li>
           </ul>
-          <p class="small">Your Founders’ rate activates the day we open. If opening is delayed or canceled, presale payments are fully refundable.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#join">Reserve Your Spot</a>
-          </div>
+          <p class="small">Your Founders’ rate activates the the day we open. If opening is delayed or canceled, presale payments are fully refundable.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="#join">Reserve Your Spot</a></div>
         </div>
 
         <div class="card">
@@ -96,17 +70,17 @@
 
         <div class="grid">
           <div class="card">
-            <h3>Individual — $89/mo</h3>
+            <h3>Individual — $99/mo</h3>
             <p class="small">Founders’ rate locked for life • Enrollment fee waived</p>
-            <a class="btn btn-primary" href="https://checkout.stripe.com/pay/REPLACE_WITH_BF_INDIVIDUAL_LINK">Reserve Individual</a>
-            <p class="small">Replace this link with your Stripe Checkout URL.</p>
+            <a class="btn btn-primary" href="https://buy.stripe.com/test_7sY3cugHHeAf7xidFcbfO01">Reserve Individual</a>
+            <p class="small">Replace with your Stripe Checkout URL (live).</p>
           </div>
 
           <div class="card">
-            <h3>Family — $139/mo</h3>
+            <h3>Family — $149/mo</h3>
             <p class="small">Up to 4 people • Founders’ rate locked for life • Enrollment fee waived</p>
-            <a class="btn class=btn-primary" href="https://checkout.stripe.com/pay/REPLACE_WITH_BF_FAMILY_LINK">Reserve Family</a>
-            <p class="small">Replace this link with your Stripe Checkout URL.</p>
+            <a class="btn btn-primary" href="https://buy.stripe.com/test_7sY3cugHHeAf7xidFcbfO01">Reserve Family</a>
+            <p class="small">Replace with your Stripe Checkout URL (live).</p>
           </div>
         </div>
 
@@ -122,15 +96,15 @@
           <input type="tel" name="Mobile" placeholder="Mobile (for updates)" value="443-742-7054" style="padding:12px;border-radius:10px;border:1px solid #cfd8e3">
           <select name="Plan" required style="padding:12px;border-radius:10px;border:1px solid #cfd8e3">
             <option value="">Select Plan</option>
-            <option>Individual – $89/mo</option>
-            <option>Family – $139/mo</option>
+            <option>Individual – $99/mo</option>
+            <option>Family – $149/mo</option>
           </select>
           <button class="btn btn-primary" type="submit" style="grid-column:1/-1;justify-self:start">Hold My Founding Spot</button>
         </form>
 
         <div style="margin-top:18px;display:flex;align-items:center;gap:12px">
           <img src="assets/qr_join.png" alt="Join QR" width="110" height="110"/>
-          <p class="small">Scan to go directly to the Join section. Replace the QR destination with your live domain when ready.</p>
+          <p class="small">Scan to go directly to the Join section at https://tahalehfitness.com.</p>
         </div>
       </div>
     </section>
