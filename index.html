@@ -1,55 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tehaleh Fitness & Wellness Club</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tehaleh Fitness & Wellness Club – Founders Presale</title>
+  <meta name="description" content="Premium fitness & wellness in Tehaleh. Founders Presale open until June 2027.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">Tehaleh Fitness & Wellness Club</div>
-    <nav>
-      <a href="#join">Join</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#contact">Contact</a>
-      <a href="#presale" class="cta">Founders Presale</a>
-    </nav>
+  <header class="site-header">
+    <div class="nav container">
+      <a class="brand" href="/">
+        <img src="assets/logo.png" alt="Tehaleh Fitness & Wellness Club" />
+        <span>Tehaleh Fitness & Wellness Club</span>
+      </a>
+      <nav class="links">
+        <a href="#join">Join</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#join">Founders Presale</a>
+      </nav>
+    </div>
   </header>
-  <section class="hero">
-    <img src="assets/hero.jpg" alt="Tehaleh Fitness exterior" />
-    <div class="copy">
-      <h1>Premium Fitness & Wellness Right here in Tehaleh</h1>
-      <p>Lock your Founders rate for life and enjoy full-club access when we open in 2027.</p>
-      <div class="buttons">
-        <a href="#join" class="btn">Join Now</a>
-        <a href="#amenities" class="btn secondary">See Amenities</a>
+
+  <!-- HERO with image element for precise crop -->
+  <section class="hero-img">
+    <img src="assets/hero.jpg" alt="Tehaleh exterior with Mount Rainier" />
+    <div class="inner container">
+      <div class="copy">
+        <h1>Premium Fitness & Wellness Right here in Tehaleh</h1>
+        <div class="sub">Founders Presale • Limited to 500 Members • Open until June 2027</div>
+        <div class="buttons">
+          <a class="btn" href="#join">Join Now</a>
+          <a class="btn secondary" href="#amenities">See Amenities</a>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- WHAT'S COMING -->
   <section id="amenities" class="whats-coming">
-    <h2>What's Coming to Tehaleh</h2>
-    <div class="grid">
-      <div class="card"><img src="assets/feat-studios.jpg" alt="Studios"></div>
-      <div class="card"><img src="assets/feat-recovery.jpg" alt="Recovery"></div>
-      <div class="card"><img src="assets/feat-fitness.jpg" alt="Fitness Center"></div>
-      <div class="card"><img src="assets/feat-pool.jpg" alt="Aquatics"></div>
-      <div class="card"><img src="assets/feat-family.jpg" alt="Kids Club"></div>
-      <div class="card"><img src="assets/feat-community.jpg" alt="Social & Café"></div>
+    <div class="container">
+      <h2>What’s Coming to Tehaleh</h2>
+      <div class="grid">
+        <div class="card"><img src="assets/feat-studios.jpg" alt="Studios"></div>
+        <div class="card"><img src="assets/feat-recovery.jpg" alt="Recovery"></div>
+        <div class="card"><img src="assets/feat-cardio.jpg" alt="Fitness Center"></div>
+        <div class="card"><img src="assets/feat-pool.jpg" alt="Aquatics"></div>
+        <div class="card"><img src="assets/feat-family.jpg" alt="Kids Club"></div>
+        <div class="card"><img src="assets/feat-community.jpg" alt="Social & Café"></div>
+      </div>
     </div>
   </section>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formsubmit.co/casey-morris@live.com" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <input type="text" name="phone" placeholder="Phone (optional)">
-      <textarea name="message" placeholder="How can we help?" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+
+  <!-- PRICING + STRIPE -->
+  <section id="join" class="section join">
+    <div class="container">
+      <h2>Founders Presale Pricing</h2>
+      <p class="sub">Rates locked for life • Limited to 500 members • Open until June 2027</p>
+      <div class="plans">
+        <article class="plan">
+          <h3>Individual</h3>
+          <div class="price-row">
+            <span class="price">$119<span class="per">/mo</span></span>
+            <span class="compare">$149</span>
+            <span class="tag">Founders rate</span>
+          </div>
+          <a class="btn-primary" href="https://buy.stripe.com/test_cNi28q6338bRbNyfNkbfO01">Reserve Individual</a>
+        </article>
+        <article class="plan">
+          <h3>Family (up to 4)</h3>
+          <div class="price-row">
+            <span class="price">$149<span class="per">/mo</span></span>
+            <span class="compare">$199</span>
+            <span class="tag">Founders rate</span>
+          </div>
+          <a class="btn-primary" href="https://buy.stripe.com/test_7sY3cugHHeAf7xidFcbfO01">Reserve Family</a>
+        </article>
+      </div>
+    </div>
   </section>
-  <footer>
-    <p>© 2025 Tehaleh Fitness & Wellness Club. All rights reserved.</p>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-wrapper">
+        <form action="https://formsubmit.co/Casey-morris@live.com" method="POST" class="contact-form">
+          <input type="hidden" name="_subject" value="Tehaleh Fitness – Website Contact Form">
+          <input type="hidden" name="_captcha" value="false">
+          <input class="input" type="text" name="Full Name" placeholder="Full Name" required>
+          <input class="input" type="email" name="Email" placeholder="Email Address" required>
+          <input class="input" type="tel" name="Phone" placeholder="Phone (optional)">
+          <textarea class="textarea" name="Message" placeholder="How can we help?" required></textarea>
+          <button class="btn-primary" type="submit">Send Message</button>
+        </form>
+        <div class="info">
+          <img src="assets/hero.jpg" alt="Facility preview">
+          <p><strong>Tehaleh Fitness & Wellness Club</strong><br/>Tehaleh, WA — Commercial Village (coming soon)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="small">© Tehaleh Fitness & Wellness Club. All rights reserved.</div>
+    </div>
   </footer>
 </body>
 </html>
